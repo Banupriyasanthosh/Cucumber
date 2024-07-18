@@ -1,0 +1,692 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-07-18T10:34:49.474Z",
+        "before": [
+          {
+            "result": {
+              "duration": 27001105800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.bef()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "To validate login with valid username and valid password",
+        "description": "",
+        "id": "to-validate-login-functionality-of-amazon-application;to-validate-login-with-valid-username-and-valid-password",
+        "after": [
+          {
+            "result": {
+              "duration": 412298500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.aft()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 22663194500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "To launch the chrome browser and hit the amazon url",
+            "match": {
+              "location": "AmazonLogin.to_launch_the_chrome_browser_and_hit_the_amazon_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3134371600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "To click the sign in button",
+            "match": {
+              "location": "AmazonLogin.to_click_the_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1148287700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "To enter valid phNo in username field",
+            "match": {
+              "location": "AmazonLogin.to_enter_valid_phNo_in_username_field()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 905472900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "To click the continue button",
+            "match": {
+              "location": "AmazonLogin.to_click_the_continue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat org.stepdefinition.AmazonLogin.to_enter_valid_password_in_password_field(AmazonLogin.java:56)\r\n\tat ✽.To enter valid password in password field(file:/C:/Users/Lenovo/eclipse-workspace2/Cucumber/src/test/resources/FeatureFiles/Amazon.feature:15)\r\n",
+              "duration": 16027100,
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "To enter valid password in password field",
+            "match": {
+              "location": "AmazonLogin.to_enter_valid_password_in_password_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3063500,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "To click the sign in link button",
+            "match": {
+              "location": "AmazonLogin.to_click_the_sign_in_link_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1645000,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "To close the chrome browser",
+            "match": {
+              "location": "AmazonLogin.to_close_the_chrome_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "To validate login functionality of Amazon application",
+    "description": "",
+    "id": "to-validate-login-functionality-of-amazon-application",
+    "keyword": "Feature",
+    "uri": "file:/C:/Users/Lenovo/eclipse-workspace2/Cucumber/src/test/resources/FeatureFiles/Amazon.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-07-18T10:35:45.053Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3053250600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.bef()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "To validate login with valid username and invalid password",
+        "description": "",
+        "id": "to-validate-login-functionality-of-facebook-application;to-validate-login-with-valid-username-and-invalid-password",
+        "after": [
+          {
+            "result": {
+              "duration": 473426700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.aft()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2707017600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "To launch the chrome browser and hit the facebook url",
+            "match": {
+              "location": "FacebookLogin.to_launch_the_chrome_browser_and_hit_the_facebook_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "cucumber.runtime.CucumberException: Step [To enter valid email in username field] is defined with 1 parameters at \u0027org.stepdefinition.FacebookLogin.to_enter_valid_email_in_username_field(DataTable) in file:/C:/Users/Lenovo/eclipse-workspace2/Cucumber/target/test-classes/\u0027.\nHowever, the gherkin step has 0 arguments.\nStep text: To enter valid email in username field\r\n\tat cucumber.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:84)\r\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:36)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:46)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)\r\n\tat org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)\r\n",
+              "duration": 2303200,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "To enter valid email in username field",
+            "match": {
+              "location": "FacebookLogin.to_enter_valid_email_in_username_field(DataTable)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2039600,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "To enter invalid password in password field",
+            "match": {
+              "location": "FacebookLogin.to_enter_invalid_password_in_password_field(DataTable)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4219400,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "To click the login button",
+            "match": {
+              "location": "FacebookLogin.to_click_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2477000,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "To close the browser",
+            "match": {
+              "location": "FacebookLogin.to_close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-07-18T10:35:51.353Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2455655000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.bef()"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "",
+        "description": "To validate login with invalid username and invalid password",
+        "id": "to-validate-login-functionality-of-facebook-application;;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 218723200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.aft()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3292899300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "To launch the chrome browser and hit the facebook url",
+            "match": {
+              "location": "FacebookLogin.to_launch_the_chrome_browser_and_hit_the_facebook_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 372805500,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "To enter the invalid email \"java123@gmail.com\" in the username field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"java123@gmail.com\"",
+                  "offset": 27
+                }
+              ],
+              "location": "FbPositiveAndNegative.to_enter_the_invalid_email_in_the_username_field(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 245275000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "To enter the invalid password \"java\" in password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"java\"",
+                  "offset": 30
+                }
+              ],
+              "location": "FbPositiveAndNegative.to_enter_the_invalid_password_in_password_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 258348500,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "To click the Log in button",
+            "match": {
+              "location": "FbPositiveAndNegative.to_click_the_Log_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1858700,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "To close the login browser",
+            "match": {
+              "location": "FbPositiveAndNegative.to_close_the_login_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-07-18T10:35:58.227Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3067599900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.bef()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "",
+        "description": "To validate login with invalid username and invalid password",
+        "id": "to-validate-login-functionality-of-facebook-application;;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 578413400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.aft()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2683421400,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "To launch the chrome browser and hit the facebook url",
+            "match": {
+              "location": "FacebookLogin.to_launch_the_chrome_browser_and_hit_the_facebook_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 314596400,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "To enter the invalid email \"selenium12@gmail.com\" in the username field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"selenium12@gmail.com\"",
+                  "offset": 27
+                }
+              ],
+              "location": "FbPositiveAndNegative.to_enter_the_invalid_email_in_the_username_field(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 385457300,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "To enter the invalid password \"selenium\" in password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"selenium\"",
+                  "offset": 30
+                }
+              ],
+              "location": "FbPositiveAndNegative.to_enter_the_invalid_password_in_password_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 251250500,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "To click the Log in button",
+            "match": {
+              "location": "FbPositiveAndNegative.to_click_the_Log_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1540900,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "To close the login browser",
+            "match": {
+              "location": "FbPositiveAndNegative.to_close_the_login_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-07-18T10:36:05.525Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2739890000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.bef()"
+            }
+          }
+        ],
+        "line": 38,
+        "name": "",
+        "description": "To validate login with invalid username and invalid password",
+        "id": "to-validate-login-functionality-of-facebook-application;;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 552385600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.aft()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2728321100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "To launch the chrome browser and hit the facebook url",
+            "match": {
+              "location": "FacebookLogin.to_launch_the_chrome_browser_and_hit_the_facebook_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 472763700,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "To enter the invalid email \"testng123@gmail.com\" in the username field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testng123@gmail.com\"",
+                  "offset": 27
+                }
+              ],
+              "location": "FbPositiveAndNegative.to_enter_the_invalid_email_in_the_username_field(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 337235000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "To enter the invalid password \"testng\" in password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testng\"",
+                  "offset": 30
+                }
+              ],
+              "location": "FbPositiveAndNegative.to_enter_the_invalid_password_in_password_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 248974000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "To click the Log in button",
+            "match": {
+              "location": "FbPositiveAndNegative.to_click_the_Log_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1574300,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "To close the login browser",
+            "match": {
+              "location": "FbPositiveAndNegative.to_close_the_login_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-07-18T10:36:12.618Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2711230200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.bef()"
+            }
+          }
+        ],
+        "line": 39,
+        "name": "",
+        "description": "To validate login with invalid username and invalid password",
+        "id": "to-validate-login-functionality-of-facebook-application;;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 569843000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.aft()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3581494400,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "To launch the chrome browser and hit the facebook url",
+            "match": {
+              "location": "FacebookLogin.to_launch_the_chrome_browser_and_hit_the_facebook_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 281580500,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "To enter the invalid email \"cucumber@gmail.com\" in the username field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"cucumber@gmail.com\"",
+                  "offset": 27
+                }
+              ],
+              "location": "FbPositiveAndNegative.to_enter_the_invalid_email_in_the_username_field(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 254384000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "To enter the invalid password \"cucumber\" in password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"cucumber\"",
+                  "offset": 30
+                }
+              ],
+              "location": "FbPositiveAndNegative.to_enter_the_invalid_password_in_password_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 179899500,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "To click the Log in button",
+            "match": {
+              "location": "FbPositiveAndNegative.to_click_the_Log_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1363500,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "To close the login browser",
+            "match": {
+              "location": "FbPositiveAndNegative.to_close_the_login_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "To validate login functionality of Facebook application",
+    "description": "//scenario outline",
+    "id": "to-validate-login-functionality-of-facebook-application",
+    "keyword": "Feature",
+    "uri": "file:/C:/Users/Lenovo/eclipse-workspace2/Cucumber/src/test/resources/FeatureFiles/FacebookLogin.feature",
+    "tags": []
+  }
+]

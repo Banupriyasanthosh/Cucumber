@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="90.684092">
+    <testcase classname="To validate login functionality of Amazon application" name="To validate login with valid username and valid password" time="55.540027">
+        <failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at org.stepdefinition.AmazonLogin.to_enter_valid_password_in_password_field(AmazonLogin.java:56)&#13;&#10;&#9;at ✽.To enter valid password in password field(file:/C:/Users/Lenovo/eclipse-workspace2/Cucumber/src/test/resources/FeatureFiles/Amazon.feature:15)&#13;&#10;">
+            <![CDATA[Given To launch the chrome browser and hit the amazon url...................passed
+When To click the sign in button............................................passed
+When To enter valid phNo in username field..................................passed
+And To click the continue button............................................passed
+And To enter valid password in password field...............................failed
+And To click the sign in link button........................................skipped
+Then To close the chrome browser............................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.stepdefinition.AmazonLogin.to_enter_valid_password_in_password_field(AmazonLogin.java:56)
+	at ✽.To enter valid password in password field(file:/C:/Users/Lenovo/eclipse-workspace2/Cucumber/src/test/resources/FeatureFiles/Amazon.feature:15)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="To validate login functionality of Facebook application" name="To validate login with valid username and invalid password" time="6.292961">
+        <failure message="cucumber.runtime.CucumberException: Step [To enter valid email in username field] is defined with 1 parameters at 'org.stepdefinition.FacebookLogin.to_enter_valid_email_in_username_field(DataTable) in file:/C:/Users/Lenovo/eclipse-workspace2/Cucumber/target/test-classes/'.&#10;However, the gherkin step has 0 arguments.&#10;Step text: To enter valid email in username field&#13;&#10;&#9;at cucumber.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:84)&#13;&#10;&#9;at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:36)&#13;&#10;&#9;at cucumber.runner.TestStep.executeStep(TestStep.java:65)&#13;&#10;&#9;at cucumber.runner.TestStep.run(TestStep.java:50)&#13;&#10;&#9;at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)&#13;&#10;&#9;at cucumber.runner.TestCase.run(TestCase.java:46)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:50)&#13;&#10;&#9;at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)&#13;&#10;&#9;at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)&#13;&#10;&#9;at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;&#10;&#9;at io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)&#13;&#10;&#9;at io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;&#10;&#9;at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)&#13;&#10;&#9;at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)&#13;&#10;">
+            <![CDATA[Given To launch the chrome browser and hit the facebook url.................passed
+When To enter valid email in username field.................................failed
+And To enter invalid password in password field.............................skipped
+And To click the login button...............................................skipped
+Then To close the browser...................................................skipped
+
+StackTrace:
+cucumber.runtime.CucumberException: Step [To enter valid email in username field] is defined with 1 parameters at 'org.stepdefinition.FacebookLogin.to_enter_valid_email_in_username_field(DataTable) in file:/C:/Users/Lenovo/eclipse-workspace2/Cucumber/target/test-classes/'.
+However, the gherkin step has 0 arguments.
+Step text: To enter valid email in username field
+	at cucumber.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:84)
+	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:36)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
+	at cucumber.runner.TestCase.run(TestCase.java:46)
+	at cucumber.runner.Runner.runPickle(Runner.java:50)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="To validate login functionality of Facebook application" name="" time="6.873627">
+        <system-out>
+            <![CDATA[Given To launch the chrome browser and hit the facebook url.................passed
+When To enter the invalid email "java123@gmail.com" in the username field...passed
+And To enter the invalid password "java" in password field..................passed
+And To click the Log in button..............................................passed
+Then To close the login browser.............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To validate login functionality of Facebook application" name="_2" time="7.295491">
+        <system-out>
+            <![CDATA[Given To launch the chrome browser and hit the facebook url.................passed
+When To enter the invalid email "selenium12@gmail.com" in the username field.passed
+And To enter the invalid password "selenium" in password field..............passed
+And To click the Log in button..............................................passed
+Then To close the login browser.............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To validate login functionality of Facebook application" name="_3" time="7.09197">
+        <system-out>
+            <![CDATA[Given To launch the chrome browser and hit the facebook url.................passed
+When To enter the invalid email "testng123@gmail.com" in the username field.passed
+And To enter the invalid password "testng" in password field................passed
+And To click the Log in button..............................................passed
+Then To close the login browser.............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To validate login functionality of Facebook application" name="_4" time="7.590016">
+        <system-out>
+            <![CDATA[Given To launch the chrome browser and hit the facebook url.................passed
+When To enter the invalid email "cucumber@gmail.com" in the username field..passed
+And To enter the invalid password "cucumber" in password field..............passed
+And To click the Log in button..............................................passed
+Then To close the login browser.............................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
